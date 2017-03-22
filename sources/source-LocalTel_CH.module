@@ -40,7 +40,7 @@ class LocalTel_CH extends superfecta_base {
 			{$caller_id = $array['entry'][0]['title'];}
 			else{
                            if(array_key_exists('title', $array['entry']))
-			   {$caller_id = $array['entry'][0]['title'];}
+			   {$caller_id = $array['entry']['title'];}
 			   else{
 			   	$caller_id = null;
 				$this->DebugPrint('Could not parse xml-response from tel.search.ch');
